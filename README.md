@@ -78,3 +78,14 @@ Available test users in the database: (email - Password)
 
 Note: Please foollow the instructions/comments mentioned in the UnitTests to execute the assertions.
 Back-end architecture is developed in a flexible way that can be modified as per the requirements. APIs can be reused or extended. Database can be extended further to contain user profile information,
+
+Database is deployed in Heroku. Please add below code in XAMPP/phpmyadmin/config.inc.php to connect to the database.
+(Database name is : heroku_2ee1b2ba097646d)
+
+/_ Heroku remote server - twitterclone backend REST API, phpunit _/
+/_ mysql://bc9af26d07907e:2587679a@us-cdbr-east-04.cleardb.com/heroku_2ee1b2ba097646d?reconnect=true _/
+$i++;
+$cfg["Servers"][$i]["host"] = "us-cdbr-east-04.cleardb.com"; //provide hostname
+$cfg["Servers"][$i]["user"] = "bc9af26d07907e"; //user name for your remote server
+$cfg["Servers"][$i]["password"] = "2587679a"; //password
+$cfg["Servers"][$i]["auth_type"] = "config"; // keep it as config

@@ -1,0 +1,12 @@
+{
+    "name": "some/name",
+    "description": "Some description will be useful too!",
+    "autoload": {
+        "classmap": [
+            "RestAPI/"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
